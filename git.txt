@@ -1,0 +1,72 @@
+Instalar Git:
+	sudo apt install git
+
+Ajuda:
+	git help
+
+Ajuda sobre comandos específicos:
+	git help init
+	git --help init
+	git help --init
+
+Configurações iniciais:
+	git config --global user.name "[nome do usuário]"
+	git config --global user.email "[email do usuário]"
+
+Listar Configurações:
+	git config --list
+
+Criar repositório (pode ser feito pelo site também):
+	git init
+
+Conectar repositório local com remoto:
+	git remote add origin [url]
+		Ex: git remote add origin https://github.com/andre-rosatto/aprendendo_git.git
+
+Clonar repositório:
+	git clone [url]
+
+Adicionar arquivo:
+	git add [nome do arquivo] [nome do arquivo]
+		Ex: git add index.html style.css
+Adicionar todos os aqruivos:
+	git add .
+
+Mostrar mudanças:
+	git status
+
+Commit:
+	git commit -m "[comentários]"
+Reescrever um commit (caso se tenha esquecido um arquivo, por exemplo):
+	git commit --amend
+
+Verificar mudanças e mesclar com o branch atual:
+	git pull
+
+Enviar commit:
+	git push
+
+Criar branch:
+	git branch [nome do branch]
+		Ex: git branch interface
+
+Mostrar o branch atual:
+	git branch
+
+Mudar o branch atual:
+	git checkout [nome do branch]
+		Ex: git checkout interface
+
+Mesclar branches:
+	git push origin [nome do branch]
+		Ex: git push origin v1.0
+
+Mostrar histórico de commits (mais recente -> mais antigo):
+	git log
+
+Mostrar diferenças entre commits:
+	git diff
+
+Obs:
+	- Arquivos listados no arquivo .gitignore são ignorados
+	- Bom guia de git em https://www.baeldung.com/git-guide
